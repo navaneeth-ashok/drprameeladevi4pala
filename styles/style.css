@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');*/
 
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Rubik&display=swap');
 
 /* General */
 html {
@@ -15,8 +17,16 @@ body {
     margin:0 auto;
 }
 
+span:lang(ml){
+    font-family: 'Baloo Chettan 2', sans-serif;
+}
+
+div:lang(ml){
+    font-family: 'Baloo Chettan 2', sans-serif;
+}
+
 h1, h2, h3 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 a{
@@ -84,12 +94,16 @@ ul.menu{
 }
 .menu li{
     display: inline-block;
-    padding-left: 26px;
+    padding-left: 10px;
     padding-bottom: 10px;
 }
 
+.menu li:first-child{
+    padding-left: 0px;
+}
+
 .menu li:last-child{
-    padding-right: 10px;
+    padding-right: 1px;
 }
 
 
@@ -107,6 +121,10 @@ ul.menu.lang{
 }
 .menu.lang a{
     font-size: 0.7em;
+}
+
+.menu.lang{
+    padding-top: 5px;
 }
 
 .langTog{
@@ -147,7 +165,7 @@ ul.menu.lang{
     margin-right: auto;
 }
 p {
-  word-break: break-all;
+  word-break: normal;
 }
 
 .social_media_links li{
@@ -194,6 +212,7 @@ input[type=text], input[type=email]{
     margin: auto;
     border-radius: 10px;
     border: 2px solid #d26900;
+    font-family: inherit;
 }
 
 label{
@@ -222,6 +241,7 @@ textarea#suggest{
     height: 150px;
     border-radius: 10px;
     border: 2px solid #d26900;
+    font-family: inherit;
 }
 
 
@@ -307,6 +327,19 @@ p#join-para{
 
 /* main content */
 
+
+.main-content ul{
+    list-style: none;
+}
+
+.main-content a{
+    color: darkgreen
+}
+
+.main-content a:hover{
+    color: #f23545;
+}
+
 #cv{
     padding-top: 10px;
 }
@@ -377,6 +410,12 @@ div.main-content{
     background-color: #df5369
 }
 
+
+.download_links{
+    padding: 10px;
+    padding-left: 35px;
+}
+
 /*Posters*/
 
 #poster ul{
@@ -408,6 +447,14 @@ div.main-content{
 
 #contact-us li{
     padding-top: 10px;
+}
+
+#contact-us a{
+    color: darkgreen;
+}
+
+#contact-us a:hover{
+    color: brown;
 }
 /* Footer */
 #footer{
@@ -476,6 +523,11 @@ div.main-content{
         text-align: center;
         padding-top: 10px;
     }
+    .menu.lang{
+        width: 98%;
+        text-align: center;
+        padding-top: 10px;
+    }
     .social_media_links{
         text-align: center;
     }
@@ -489,14 +541,6 @@ div.main-content{
         padding-bottom: 15px;
     }
     
-/*
-    .banner-image img{
-        padding-top: 50px;
-        transform: scale(1.5);
-        padding-bottom: 50px;
-    }
-*/
-    
     input#name{
         width: 70%;
     }
@@ -506,6 +550,12 @@ div.main-content{
     input#phone{
         width: 70%;
     }
+    
+    .download_links{
+        text-align: center;
+        padding: 10px;
+    }
+
 
     textarea#suggest{
         width: 85%;
